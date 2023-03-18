@@ -8,4 +8,8 @@ class MenuSerializer(serializers.ModelSerializer) :
         model = models.Menu
         fields = ["id" , "title","price","inventory"]
 
-    
+class BookingSerializer(serializers.ModelSerializer ) :
+
+    class Meta :
+        model = models.Booking 
+        fields = ["id","name", "no_of_guest","booking_date"]
