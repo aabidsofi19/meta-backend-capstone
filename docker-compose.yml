@@ -1,0 +1,16 @@
+
+version: '3.8'
+
+services:
+  db:
+    image: mysql:latest
+    container_name: capstone-db
+    environment:
+      MYSQL_ROOT_PASSWORD: example 
+      MYSQL_DATABASE: LittleLemon
+      MYSQL_USER: admindjango
+      MYSQL_PASSWORD: employee@123!
+    ports:
+      - "3306:3306"
+    volumes:
+      - ./mysql-data:/var/lib/mysql
