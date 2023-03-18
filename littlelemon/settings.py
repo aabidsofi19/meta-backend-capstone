@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
+    'djoser',
     'restaurant',
 
 ]
@@ -108,6 +109,20 @@ AUTH_PASSWORD_VALIDATORS = [
         'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
     },
 ]
+
+
+#Config For Djoser
+DJOSER={"USER_ID_FIELD":"username"}
+
+
+#Rest Framerwork 
+REST_FRAMEWORK = {
+    "DEFAULT_AUTHENTICATION_CLASSES" : (
+        "rest_framework.authentication.TokenAuthentication" ,
+        "rest_framework.authentication.SessionAuthentication",
+    )
+}
+
 
 
 # Internationalization
