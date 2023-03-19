@@ -19,7 +19,10 @@
 /restaurant/booking/tables       <== Get , PUT , POST , DELETE 
 
 ## auth urls in (./littlelemon/urls.py) 
-/auth                      <== Djoser Urls   
+/auth/users                <== Djoser Urls  
+/auth/users/me 
+/auth/token/login 
+
 /api-token-auth            <== rest-framework token auth
 
 
